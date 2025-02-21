@@ -13,4 +13,7 @@ jobs:
       - name: Mostrar mensaje
         run: echo "Hola mundo"
       - name: Enviar Peticion
-        run: curl -X POST "https://webhook.site/" -H "content-type: aplication/json" -d $'{"Nombre":"MessiGoat"}'
+        run: |
+  curl -X POST "https://webhook.site/" -H "Content-Type: application/json" -d '{"Nombre":"MessiGoat"}'
+
+  
