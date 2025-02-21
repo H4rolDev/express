@@ -4,10 +4,10 @@ WORKDIR /app
 
 COPY package*json ./
 
-RUN nom install
+RUN npm install
 
 COPY . .
 
 EXPOSE 3000
 
-CMD ["node", "index"]
+CMD ["node", "app"]
