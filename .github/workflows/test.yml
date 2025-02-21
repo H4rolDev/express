@@ -12,8 +12,10 @@ jobs:
     steps:
       - name: Mostrar mensaje
         run: echo "Hola mundo"
-      - name: Enviar Peticion
-        run: |
-  curl -X POST "https://webhook.site/" -H "Content-Type: application/json" -d '{"Nombre":"MessiGoat"}'
+      - name: Enviar solicitud POST
+        run: >
+          curl -X POST "https://webhook.site/" -H "Content-Type: application/json" -d '{"Nombre":"MessiGoat"}'
+
+
 
   
